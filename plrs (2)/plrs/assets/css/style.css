@@ -1,0 +1,127 @@
+/* Reset & Smoothness */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* Using a mesh gradient for a more modern look */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card - Added subtle glassmorphism and better spacing */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on the card itself */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Title - Stronger weight and spacing */
+.card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2d3748;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+}
+
+/* Labels - (New) Good for accessibility and UI */
+.card label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 5px;
+}
+
+/* Inputs & Selects - Focus states are key */
+.card input,
+.card select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #edf2f7;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #2d3748;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.card input:focus,
+.card select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+/* Button - Gradient and Shadow */
+.card button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+    transition: all 0.3s ease;
+}
+
+.card button:hover {
+    opacity: 0.9;
+    box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+    transform: scale(1.02);
+}
+
+.card button:active {
+    transform: scale(0.98);
+}
+
+/* Links & Helper Text */
+.card p {
+    text-align: center;
+    margin-top: 20px;
+    color: #718096;
+    font-size: 14px;
+}
+
+.card a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card a:hover {
+    color: #764ba2;
+}
+
+/* Error - Softer and more readable */
+.error {
+    background: #fff5f5;
+    color: #c53030;
+    padding: 12px;
+    border-left: 4px solid #c53030;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}

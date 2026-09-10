@@ -1,0 +1,30 @@
+C:\xampp\htdocs\plrs\
+│
+├── ml_model/
+│   ├── train_from_db.py
+│   ├── predict.py
+│   └── model.pkl
+│
+├── config/
+│   └── db.php
+│
+├── auth/
+│   ├── login.php
+│   ├── register.php
+│   └── logout.php
+│
+├── student/
+│   ├── dashboard.php
+│   ├── enter_marks.php
+│   ├── recommendation.php
+│   └── progress.php
+│
+├── faculty/
+│   ├── dashboard.php
+│   ├── student_list.php
+│   ├── reports.php
+│   └── clusters.php
+│
+├── assets/
+│
+└── index.php
